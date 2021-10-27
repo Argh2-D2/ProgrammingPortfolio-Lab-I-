@@ -6,7 +6,6 @@ namespace L1._3_Errors
     {
         static void Main(string[] args)
         {
-            // Add your code here
             Console.WriteLine("Game Over!");
         }
     }
