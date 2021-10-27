@@ -6,7 +6,6 @@ namespace L1._7_GradeCalculator
     {
         static void Main(string[] args)
         {
-            //Your codes here
             Console.WriteLine("Hello. Please enter marks acquired from Programming Challenge I.");
             int Number = int.Parse(Console.ReadLine());
 
@@ -16,10 +15,12 @@ namespace L1._7_GradeCalculator
             Console.WriteLine("Finally, enter the marks from Capstone Project.");
             int ThirdNumber = int.Parse(Console.ReadLine());   
             
-            decimal OverallMarks = Number + SecondNumber + ThirdNumber / ((Number + SecondNumber + ThirdNumber/100 * Number + SecondNumber + ThirdNumber));
-
-            Console.WriteLine("The overall mark is " + OverallMarks + "%. "+ OverallMarks.ToString("F1"));
-
+            decimal OverallMarks = Number + SecondNumber + ThirdNumber;
+            decimal x = OverallMarks/3;
+            //When calculating separate formula as numbers get muddled up
+            //breakpoint used at line 19 to identfy previous formula problem 
+            
+            Console.WriteLine("After calculating, the overall mark is "+ x.ToString("F1")+ "%");
         }
     }
 }
