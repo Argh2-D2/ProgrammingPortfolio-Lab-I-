@@ -16,7 +16,7 @@ namespace L1._6_DiscountedSalesPrice
            Console.WriteLine("Enter orginal sales price.");
            decimal originalPrice = decimal.Parse(Console.ReadLine());
 
-           decimal discountPrice = originalPrice - ((discount/100m * originalPrice));
+           decimal discountPrice = originalPrice - (discount/100m * originalPrice);
 
            Console.WriteLine("Product: " + productname);
            Console.WriteLine("Original Price:" + originalPrice.ToString("C2"));
