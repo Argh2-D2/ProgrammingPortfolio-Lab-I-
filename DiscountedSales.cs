@@ -6,7 +6,6 @@ namespace L1._6_DiscountedSalesPrice
     {
         static void Main(string[] args)
         {
-            // Your codes here
            Console.WriteLine("Enter product name.");
            string productname = Console.ReadLine();
 
@@ -20,8 +19,8 @@ namespace L1._6_DiscountedSalesPrice
 
            Console.WriteLine("Product: " + productname);
            Console.WriteLine("Original Price:" + originalPrice.ToString("C2"));
-           Console.WriteLine("At a discount of " + discount + "%, the discounted price is " + discountPrice.ToString("C2"));
-           
+           Console.WriteLine("At a discount of " + discount + "%, the discounted price is " + discountPrice.ToString("C2"))
+               
         }
     }
 }
